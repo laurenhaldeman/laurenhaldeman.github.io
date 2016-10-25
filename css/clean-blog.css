@@ -23,7 +23,7 @@ h4,
 h5,
 h6 {
   font-family: 'Sanchez', serif;
-  font-weight: 800;
+  font-weight: 500;
 }
 a {
   color: #404040;
@@ -53,10 +53,10 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Sanchez', serif;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  font-weight: 500;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
