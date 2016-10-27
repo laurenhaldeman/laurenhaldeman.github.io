@@ -25,6 +25,13 @@ h6 {
   font-family: 'Sanchez', serif;
   font-weight: 500;
 }
+
+h1.border {
+  border: 7px solid #000000;
+    padding: 7px 11px;
+}
+
+
 a {
   color: #404040;
 }
