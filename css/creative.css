@@ -7,7 +7,7 @@
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
-  color: #404040;
+  color: #222;
 }
 p {
   line-height: 1.5;
@@ -27,13 +27,31 @@ h6 {
 }
 
 h1.border {
-  border: 7px solid #000000;
+  border: 7px solid #222;
     padding: 7px 11px;
+    display: inline;
 }
 
+h2.lined {
+  font-size: 20px;
+  text-align:center;
+  line-height:24px;
+  letter-spacing:5px;
+  color: #333333;
+  font-weight:bold;
+  margin-bottom:30px;
+  margin-top:10px;
+}
+
+h2.lined span:after, h2.lined span:before {
+    background-color: rgba(51,51,51,0.4);
+    height: 3px!important;
+}
+
+section.bar {padding: 100px 0;}
 
 a {
-  color: #404040;
+  color: #222;
 }
 a:hover,
 a:focus {
@@ -54,7 +72,16 @@ hr.small {
   border-color: white;
 }
 
+.btn-default {
+  padding: 10px;
+  border: #222 solid 4px;
+  background: transparent;
+}
+
+.glow {background: #edfbba;}
+
 .textcenter {text-align: center;}
+.imgcenter {margin: 0 auto;}
 
 .navbar-custom {
   background: white;
@@ -68,6 +95,11 @@ hr.small {
 .navbar-custom .navbar-brand {
   font-weight: 500;
 }
+
+.no-banner .navbar-custom .nav li a, .no-banner .navbar-custom .navbar-brand {
+  color: #222;
+}
+
 .navbar-custom .nav li a {
   text-transform: uppercase;
   font-size: 12px;
@@ -121,14 +153,14 @@ hr.small {
     transition: transform 0.3s;
   }
   .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
+    color: #222;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
     color: #0085a1;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #404040;
+    color: #222;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
@@ -222,7 +254,7 @@ hr.small {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: #222;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
@@ -247,7 +279,7 @@ hr.small {
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #222;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
@@ -387,7 +419,7 @@ form .row:first-child .floating-label-form-group {
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #808080;
-  background-color: #404040;
+  background-color: #222;
   cursor: not-allowed;
 }
 ::-moz-selection {
