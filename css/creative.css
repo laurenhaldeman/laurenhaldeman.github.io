@@ -7,7 +7,7 @@
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
-  color: #222;
+  color: #414141;
 }
 p {
   line-height: 1.5;
@@ -24,15 +24,22 @@ h5,
 h6 {
   font-family: 'Sanchez', serif;
   font-weight: 500;
+  color: #222;
+}
+
+h1.large {
+font-size: 70px;
+line-height: 80px;
 }
 
 h1.border {
   border: 7px solid #222;
     padding: 7px 11px;
     display: inline;
+    letter-spacing:6px;
 }
 
-h2.lined {
+h1.lined {
   font-size: 20px;
   text-align:center;
   line-height:24px;
@@ -43,7 +50,7 @@ h2.lined {
   margin-top:10px;
 }
 
-h2.lined span:after, h2.lined span:before {
+h1.lined span:after, h2.lined span:before {
     background-color: rgba(51,51,51,0.4);
     height: 3px!important;
 }
@@ -55,7 +62,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #22bbc3;;
 }
 a img:hover,
 a img:focus {
@@ -78,7 +85,11 @@ hr.small {
   background: transparent;
 }
 
-.glow {background: #edfbba;}
+.glow {background: #edfbba !important; color: #222 !important;}
+.dark {background: #262626; color: white;}
+.dark h1.border {border-color: white; color: white;}
+.dark a, .dark p {color: rgba(255,255,255,0.5); text-decoration: none;}
+.lt-grey {background: #f1f1f1;}
 
 .textcenter {text-align: center;}
 .imgcenter {margin: 0 auto;}
@@ -94,6 +105,14 @@ hr.small {
 }
 .navbar-custom .navbar-brand {
   font-weight: 500;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 2px 15px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .no-banner .navbar-custom .nav li a, .no-banner .navbar-custom .navbar-brand {
@@ -113,7 +132,6 @@ hr.small {
   }
   .navbar-custom .navbar-brand {
     color: white;
-    padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
@@ -125,7 +143,7 @@ hr.small {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #22bbc3;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -157,14 +175,14 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #22bbc3;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #222;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #22bbc3;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -177,7 +195,7 @@ hr.small {
 }
 .intro-header {
   background: no-repeat center center;
-  background-color: #808080;
+  background-color: #22bbc3;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -187,7 +205,8 @@ hr.small {
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
-.intro-header .page-heading {
+.intro-header .page-heading,
+.into-header h1 {
   padding: 100px 0 50px;
   color: white;
 }
@@ -259,7 +278,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #22bbc3;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -283,7 +302,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #22bbc3;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -363,7 +382,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #22bbc3;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -383,8 +402,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #22bbc3;
+  border: #22bbc3 solid 4px;
   color: white;
 }
 .pager {
@@ -411,8 +430,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #22bbc3;
+  border: 1px solid #22bbc3;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -425,12 +444,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #22bbc3;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #22bbc3;
 }
 img::selection {
   color: white;
@@ -441,5 +460,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #22bbc3;
 }
