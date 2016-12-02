@@ -98,6 +98,7 @@ description: ""
     <div class="textcenter">
     <h1 class="border" style="margin: 0px auto">BLOG TIME</h1>
   </div>
+
 {% for post in paginator.posts limit:2 %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
