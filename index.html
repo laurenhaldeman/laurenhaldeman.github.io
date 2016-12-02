@@ -14,7 +14,7 @@ description: ""
       </h1>
       </div>
       <div class="col-md-6">
-        <img alt="" title="bg-lauren-haldeman-square" src="http://laurenhaldeman.com/wp-content/uploads/2016/04/bg-lauren-haldeman-square.jpg">
+        <img alt="" class="circle" title="bg-lauren-haldeman-square" src="/img/bg-lauren-haldeman-square.jpg">
       </div>
     </div>
   </div>
@@ -101,16 +101,19 @@ description: ""
 
 {% for post in paginator.posts limit:2 %}
 <div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
+
+      <div class="post-image"><img src="{{ post.image }}"</div>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">{{ post.title }}</h2>
+      </a>
         {% if post.subtitle %}
         <h3 class="post-subtitle">
             {{ post.subtitle }}
         </h3>
         {% endif %}
+        {{ post.excerpt }}
     </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+
 </div>
 <hr>
 {% endfor %}

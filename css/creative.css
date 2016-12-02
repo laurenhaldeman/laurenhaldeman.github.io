@@ -93,6 +93,7 @@ hr.small {
 
 .textcenter {text-align: center;}
 .imgcenter {margin: 0 auto;}
+.circle {border-radius: 100%;}
 
 .navbar-custom {
   background: white;
