@@ -30,7 +30,7 @@ description: ""
 
 <section class="glow bar">
   <div class="container textcenter">
-        <h2 class="lined"><span>IT’S A WHAT?</span></h2>
+        <h1 class="lined"><span>IT’S A WHAT?</span></h1>
         <p>
         Calenday is a book of poems that you can read! I wrote it with my mind and my hands.
         It is mostly about blueprints, ghosts, parents &amp; children, but it is also about data-syncing,
@@ -111,7 +111,7 @@ description: ""
             {{ post.subtitle }}
         </h3>
         {% endif %}
-        {{ post.excerpt }}
+        {{ post.excerpt }} | <a href="{{ post.url | prepend: site.baseurl }}">read more</a>
     </a>
 
 </div>
