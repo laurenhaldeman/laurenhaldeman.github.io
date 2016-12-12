@@ -1,9 +1,3 @@
-/*!
- * Clean Blog v1.0.0 (http://startbootstrap.com)
- * Copyright 2015 Start Bootstrap
- * Licensed under MIT (https://spdx.org/licenses/MIT)
- */
-
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
@@ -70,7 +64,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #22bbc3;;
+  color: #829444;
 }
 a img:hover,
 a img:focus {
@@ -93,6 +87,8 @@ hr.small {
   background: transparent;
 }
 
+.btn-default:hover {border-color: #829444;}
+
 ul {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
@@ -108,12 +104,16 @@ ul {
 .dark a, .dark p {color: rgba(255,255,255,0.9); text-decoration: none;}
 .lt-grey {background: #f1f1f1;}
 
+.no-top {padding-top: 0px !important;}
+
 .textcenter {text-align: center;}
 .imgcenter {margin: 0 auto;}
 .circle {border-radius: 100%;}
 .light-text {color: #fff;}
 .dark-text {color: #111;}
 .drawn {letter-spacing: 5px; font-family: 'Londrina Solid', sans-serif;}
+
+/* NAV BAR */
 
 .navbar-custom {
   background: white;
@@ -167,7 +167,7 @@ ul {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: #22bbc3;
+    color: #829444;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -199,14 +199,14 @@ ul {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #22bbc3;
+    color: #829444;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #111;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #22bbc3;
+    color: #829444;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -217,6 +217,8 @@ ul {
     transform: translate3d(0, 100%, 0);
   }
 }
+
+/* BANNERS AND HEADERS */
 
 .banner h1 {color: #fff;}
 .intro-header {
@@ -303,13 +305,92 @@ ul {
     font-size: 30px;
   }
 }
+
+/* ARROW */
+
+.arrow-wrap {
+  background: #fff;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  margin: 0px auto;
+}
+
+.arrow {
+float:left;
+position:relative;
+width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color: #00a89a transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.8em;
+  left: -3em;
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color: #fff transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+
+.hint {
+  position:absolute;
+  top:0.6em;
+  width:100%;
+  left:0;
+  font-size:2em;
+  font-style:italic;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+}
+
+
+.arrow-wrap:hover .hint {
+  opacity:1;
+}
+
+
+  @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+  }
+
+
+/* POSTS */
+
 .post-preview > a {
   color: #111;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #22bbc3;
+  color: #829444;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -331,16 +412,25 @@ ul {
   text-decoration: none;
   color: #111;
 }
+.post-excerpt img {display: none;}
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #22bbc3;
+  color: #829444;
   text-decoration: underline;
 }
+
+.post-image {
+  width: 400px;
+  float: left;
+}
+
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px;
   }
 }
+
+
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
@@ -413,7 +503,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #22bbc3;
+  color: #829444;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -434,8 +524,8 @@ form .row:first-child .floating-label-form-group {
 .btn-default:hover,
 .btn-default:focus
  {
-  background-color: #22bbc3;
-  border: #22bbc3 solid 4px;
+  background-color: #829444;
+  border: #829444solid 4px;
   color: white;
 
 }
@@ -467,8 +557,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #22bbc3;
-  border: 1px solid #22bbc3;
+  background-color: #829444;
+  border: 1px solid #829444;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -481,12 +571,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #22bbc3;
+  background: #829444;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #22bbc3;
+  background: #829444;
 }
 img::selection {
   color: white;
@@ -497,7 +587,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #22bbc3;
+  webkit-tap-highlight-color: #829444;
 }
 
 /* Web Design */
