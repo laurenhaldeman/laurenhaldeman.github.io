@@ -10,7 +10,7 @@ var Typer = function(element) {
   this.progress = { word:0, char:0, building:true, atWordEnd:false };
   this.typing = true;
 
-  var colors = element.dataset.colors || "black";
+  var colors = element.dataset.colors || "#3f3844";
   this.colors = colors.split(",");
   this.element.style.color = this.colors[0];
   this.colorIndex = 0;

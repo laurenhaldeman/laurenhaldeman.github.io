@@ -2,13 +2,19 @@
 layout: no-banner
 description: ""
 ---
-<section class="bar">
-  <div class="container">
+
+<section class="bar" style="">
+  <div class="container" style="clear: both;">
     <div class="row">
       <div class="col-md-6">
         <p>	&nbsp;</p>
+
+
+
+
         <h1 class="large">Hi, I'm Lauren</h1>
-        <h1 class="large">I Make <span class="typer" id="some-id" data-delay="100" data-delim=":" data-words="Websites:Books:Masks:Humans"></span>
+        <h1 class="large">I Make <span class="typer" id="typer" data-delay="100" data-delim=":"
+       data-words="Websites:Books:Masks:Humans"></span>
 
       </h1>
       <a class="arrow-wrap" href="#content">
@@ -24,9 +30,9 @@ description: ""
   </div>
 </section>
 
-<section class="bar no-top" id="content">
+<section class="bar no-top white" id="content">
 <div class="container textcenter">
-<img class="imgcenter" src="http://laurenhaldeman.com/wp-content/uploads/2014/09/calenday-lauren-haldeman-desk-from-above.png" alt="calenday-lauren-haldeman-desk-from-above" width="800" height="400">
+<img class="imgcenter" src="/img/calenday-lauren-haldeman-desk-from-above.png" alt="calenday-lauren-haldeman-desk-from-above" width="800" height="400">
 
 <h1 class="border">CALENDAY IS A BOOK</h1>
 </div>
@@ -61,7 +67,7 @@ description: ""
       </div>
       <div class="col-md-6">
         <iframe src="https://player.vimeo.com/video/108148326" width="500" height="281" frameborder="0" title="WE ARE IN A FOREST" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-        <p><a href="https://vimeo.com/121149132">WE ARE IN A FOREST, Published on the Continental Review</a>
+        <p><a href="https://vimeo.com/121149132">WE ARE IN A FOREST, the Continental Review</a>
       </div>
       <div class="col-md-6">
         <iframe src="https://www.youtube.com/embed/EqzXJPp7P4Y?feature=oembed" width="500" height="281" frameborder="0" title="JEALOUS" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
@@ -84,7 +90,7 @@ description: ""
 
 <section class="textcenter bar">
     <div class="container">
-        <h1 class="lined"><span>HELLO THERE</span></h1>
+        <h1 class="lined"><span>OH, HELLO THERE</span></h1>
         <p>
         Hi! I’m Lauren Haldeman. I am the author of the poetry collection Calenday (Rescue Press, 2014). I work as the web developer, web designer and editor for this website, as well as several other websites, including the Writing University website at the University of Iowa and the Iowa Review. I received my M.F.A. from the Iowa Writers’ Workshop, and have been a finalist for the Walt Whitman award and the Colorado Prize for Poetry. Also: I’m a mom and make paintings.
         </p>
@@ -99,46 +105,35 @@ description: ""
 
 <section class="glow bar">
   <div class="container">
-    <div class="textcenter">
-    <h1 class="border" style="margin: 0px auto">BLOG TIME</h1>
-    </div>
 
-
-{% for post in paginator.posts limit:2 %}
-
-      <div class="post-preview">
-            <div class="post-image"><img src="{{ post.image }}"></div>
-            <a href="{{ post.url | prepend: site.baseurl }}">
-              <h2 class="post-title">{{ post.title }}</h2>
-            </a>
-              {% if post.subtitle %}
-              <h3 class="post-subtitle">
-                  {{ post.subtitle }}
-              </h3>
-              {% endif %}
-            <div class="post-excerpt">
-              {{ post.excerpt }} | <a href="{{ post.url | prepend: site.baseurl }}">read more</a>
-            </div>
-      <hr>
+      <div class="textcenter">
+      <h1 class="border" style="margin: 0px auto">BLOG TIME</h1>
       </div>
-{% endfor %}
-</div>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
 
-</div>
+        {% for post in site.posts limit:2 %}
+
+        <div class="post-preview">
+              <div class="post-image">
+                <img src="{{ post.image }}">
+              </div>
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                <h2 class="post-title">{{ post.title }}</h2>
+              </a>
+                {% if post.subtitle %}
+                <h3 class="post-subtitle">
+                    {{ post.subtitle }}
+                </h3>
+                {% endif %}
+              <div class="post-excerpt">
+                {{ post.excerpt | strip_html | truncatewords:60 }} || <a href="{{ post.url | prepend: site.baseurl }}" class="">read more</a>
+              </div>
+              <hr>
+        </div>
+        {% endfor %}
+
+
+
+
+ </div>
 </section>

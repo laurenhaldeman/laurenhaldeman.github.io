@@ -1,5 +1,29 @@
+<div class="color-palette js-palette">
+  <div class="unlocked">
+  <div class="js-palette-color" style="background-color: rgb(88, 24, 69);"></div>
+  </div>
+  <div class="unlocked">
+  <div class="js-palette-color" style="background-color: rgb(144, 12, 63); "></div>
+  </div>
+  <div class="unlocked">
+    <div class="js-palette-color" style="background-color: rgb(199, 0, 57);"></div>
+  </div>
+  <div class="unlocked">
+    <div class="js-palette-color" style="background-color: rgb(255, 87, 51);"></div>
+  </div>
+  <div class="unlocked">
+    <div class="js-palette-color" style="background-color: rgb(255, 195, 0);"></div>
+  </div>
+  <div class="unlocked">
+    <div class="js-palette-color" style="background-color: rgb(218, 247, 166);"></div>
+  </div>
+</div>
+
 <!-- Navigation -->
+
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
@@ -9,23 +33,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">Lauren</a>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+              <span class="1">L</span><span class="2">a</span><span class="3">u</span><span class="4">r</span><span class="5">e</span><span class="6">n</span></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="{{ site.baseurl }}/">Home</a>
-                </li>
-                {% for page in site.pages %}{% if page.title %}
-				{% if page.url != '/404.html' %}
-                <li>
-                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                </li>
-				{% endif %}
-                {% endif %}{% endfor %}
-            </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="/about/">About</a></li>
+              <li><a href="/calenday/">Books</a></li>
+              <li><a href="/web-design/">Web Design</a></li>
+              <li><a href="/readings/">Readings</a></li>
+              <li><a href="/blog-time/">Blog Time</a></li>
+              <li><a href="/contact/">Contact</a></li>
+          </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>

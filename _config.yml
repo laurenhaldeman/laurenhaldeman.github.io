@@ -44,3 +44,14 @@ kramdown:
   input:          GFM
   hard_wrap:      false
   footnote_nr:    1
+
+# image mini_magick
+mini_magick:
+    thumbnail:
+        source: img/photos/original
+        destination: img/photos/thumbnail
+        resize: "100x100"
+    medium:
+        source: img/photos/original
+        destination: img/photos/medium
+        resize: "600x400"
