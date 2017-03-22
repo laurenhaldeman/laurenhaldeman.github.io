@@ -772,7 +772,7 @@ body {
 h3.web-design {
 }
 
-.web-design .img-responsive {min-height: 370px;}
+.web-design .img-responsive {width: 100%;}
 
 .web-headers {
 }
