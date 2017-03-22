@@ -2,7 +2,7 @@ body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
   color: #3f3844;
-  background-color: #eeeeee;
+
 }
 p {
   line-height: 1.5;
@@ -20,7 +20,7 @@ h5,
 h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  color: #3f3844;
+  color: #28242B;
 }
 
 h1.large {
@@ -28,11 +28,11 @@ font-size: 70px;
 line-height: 80px;
 font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-weight: 500;
-color: #3f3844;
+color: #28242B;
 }
 
 h1.border {
-  border: 7px solid #3f3844;
+  border: 7px solid #28242B;
   padding: 7px 11px;
   display: inline;
   line-height:24px;
@@ -46,7 +46,7 @@ h1.lined {
   text-align:center;
   line-height:24px;
   letter-spacing:5px;
-  color: #3f3844;
+  color: #28242B;
   font-weight:bold;
   margin-bottom:30px;
   margin-top:10px;
@@ -88,11 +88,13 @@ hr.small {
 }
 
 .btn-default {
-  color: #3f3844;
+  color: #28242B;
   padding: 10px;
-  border: #3f3844 solid 4px;
+  border: #28242B solid 4px;
   background: transparent;
 }
+
+.btn-default a {color: #28242B;}
 
 .btn-default:hover {border-color: #FF5733;}
 
@@ -107,7 +109,7 @@ ul {
 /* GLOBALS */
 .glow {background: #edfbba !important; color: #3f3844 !important;}
 .dark {background: #262626; color: white;}
-.white {background: white;}
+.white {background: #f7f7f7 !important;}
 .dark h1.border {border-color: white; color: white;}
 .dark a, .dark p {color: rgba(255,255,255,0.9); text-decoration: none;}
 .lt-grey {background: #f1f1f1;}
@@ -123,8 +125,9 @@ ul {
 
 /* NAV BAR */
 
+.navbar-default {background: transparent !important;}
+
 .navbar-custom {
-  background: #f7f7f7;
   position: absolute;
   top: 0;
   left: 0;
@@ -258,6 +261,9 @@ div.color-palette>div div, nav.static-nav div.color-palette>div div {
 /* BANNERS AND HEADERS */
 
 .banner h1 {color: #fff;}
+.banner .post-heading .subheading,
+.banner .post-heading .meta {color: white;}
+
 .intro-header {
   background: no-repeat center center;
   background-color: #3f3844;
@@ -297,13 +303,14 @@ div.color-palette>div div, nav.static-nav div.color-palette>div div {
   text-align:center;
   line-height:24px;
   letter-spacing:5px;
-  color: #3f3844;
   font-weight:bold;
   margin-bottom:30px;
   margin-top:10px;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
 }
+
+
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
@@ -507,6 +514,60 @@ text-decoration: none; }
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+/* Events */
+.event-list {font-family: 'Open Sans',Arial,sans-serif;}
+
+.event-list ul li {list-style-type: none;}
+.event-date {
+    float: left;
+    margin: 0 0px 20px 0;
+}
+
+.event-list .start-date, .event-list .end-date {
+    width: auto!important;
+    border-radius: 0px!important;
+    background-color: white!important;
+    border-right: #000 1px solid!important;
+    font-size: 20px;
+    color: #000000;
+    margin-right: 2em;
+    padding-right: 40px;
+    text-align: right!important;
+    float: left;
+}
+
+.event-time, .event-location {
+    padding-right: 0.8em;
+    color: rgb(144, 12, 63);
+}
+
+.event-day {
+    font-weight: bold;
+    line-height: 70px;
+    margin-bottom: 0;
+    font-size: 70px;
+}
+.event-month {
+    text-transform: uppercase;
+    font-size: 1.0em;
+    line-height: 1em;
+    padding: 0.4em 0;
+}
+.event-year {
+    font-size: 0.8em;
+    line-height: 0.8em;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.3em;
+}
+
+li.event {
+    clear: both;
+    margin: 0 0.5em 1.5em 0.5em;
+    zoom: 1;
+}
+
+/* Footer */
 footer {
   padding: 50px 0 65px;
 }
@@ -519,6 +580,11 @@ footer .copyright {
   text-align: center;
   margin-bottom: 0;
 }
+
+.fa-stack {
+    color: #c3c3c3;
+}
+
 .floating-label-form-group {
   font-size: 14px;
   position: relative;

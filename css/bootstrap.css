@@ -11,7 +11,7 @@ html {
 }
 body {
   margin: 0;
-  
+
 }
 article,
 aside,
@@ -4497,7 +4497,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {

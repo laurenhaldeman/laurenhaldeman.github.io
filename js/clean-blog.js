@@ -1009,7 +1009,7 @@ $(document).ready(function() {
 });
 
 // responsive embed videos
-$(document).ready(function () { 
+$(document).ready(function () {
     $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 	$('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
     $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
@@ -1028,31 +1028,31 @@ $(function() {
 });
 
 // Navigation Scripts to Show Header on Scroll-Up
-jQuery(document).ready(function($) {
-    var MQL = 1170;
+//jQuery(document).ready(function($) {
+//    var MQL = 1170;
 
     //primary navigation slide-in effect
-    if ($(window).width() > MQL) {
-        var headerHeight = $('.navbar-custom').height();
-        $(window).on('scroll', {
-                previousTop: 0
-            },
-            function() {
-                var currentTop = $(window).scrollTop();
-                //check if user is scrolling up
-                if (currentTop < this.previousTop) {
+//    if ($(window).width() > MQL) {
+//        var headerHeight = $('.navbar-custom').height();
+//        $(window).on('scroll', {
+//                previousTop: 0
+//            },
+//            function() {
+//                var currentTop = $(window).scrollTop();
+//                //check if user is scrolling up
+//                if (currentTop < this.previousTop) {
                     //if scrolling up...
-                    if (currentTop > 0 && $('.navbar-custom').hasClass('is-fixed')) {
-                        $('.navbar-custom').addClass('is-visible');
-                    } else {
-                        $('.navbar-custom').removeClass('is-visible is-fixed');
-                    }
-                } else {
+//                    if (currentTop > 0 && $('.navbar-custom').hasClass('is-fixed')) {
+//                        $('.navbar-custom').addClass('is-visible');
+//                    } else {
+//                        $('.navbar-custom').removeClass('is-visible is-fixed');
+//                    }
+//                } else {
                     //if scrolling down...
-                    $('.navbar-custom').removeClass('is-visible');
-                    if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) $('.navbar-custom').addClass('is-fixed');
-                }
-                this.previousTop = currentTop;
-            });
-    }
-});
+//                    $('.navbar-custom').removeClass('is-visible');
+//                    if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) $('.navbar-custom').addClass('is-fixed white');
+//                }
+//                this.previousTop = currentTop;
+//            });
+//    }
+//});
