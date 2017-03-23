@@ -65,7 +65,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #FF5733;
+  color: #5e5e5e;;
 }
 a img:hover,
 a img:focus {
@@ -208,7 +208,7 @@ div.color-palette>div div, nav.static-nav div.color-palette>div div {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: #FF5733;
+    color: #5e5e5e;;
   }
 }
 @media only screen and (min-width: 1170px) {
