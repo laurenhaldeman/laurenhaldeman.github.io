@@ -17,20 +17,22 @@ header-img: "img/about-bg.jpg"
   </div>
 </section>
 
+<section>
+	<div class="no-gutter web-design">
+	  <ul>
+		{% for post in site.categories.Website %}
+	  <li class="col-lg-6 col-xs-12">
+		<a href="{{ post.url }}">
+		<div class="img-overlay">
 
-<div class="no-gutter web-design">
-  <ul>
-    {% for post in site.categories.Website %}
-  <li class="col-lg-6 col-xs-6">
-    <a href="{{ post.url }}">
-    <div class="img-overlay">
+			<img class="img-responsive" src="{{ post.image }}" alt="{{ post.title }}">
+			<div class="project-overlay"><p>{{ post.title }}</p></div>
 
-        <img class="img-responsive" src="{{ post.image }}" alt="{{ post.title }}">
-        <div class="project-overlay"><p>{{ post.title }}</p></div>
+		</div>
+		</a>
+	</li>
+	{% endfor %}
+	</ul>
+	</div>
 
-    </div>
-    </a>
-</li>
-{% endfor %}
-</ul>
-</div>
+</section>
