@@ -747,7 +747,7 @@ body {
 .web-design ul li:nth-of-type(5n) .project-overlay {background-color: rgba(199, 0, 57, 0.9);}
 .web-design ul li:nth-of-type(6n) .project-overlay {background-color: rgba(218, 247, 166, 0.9);}
 
-.web-design ul li:hover .project-overlay {opacity: 0.8}
+.web-design ul li:hover .project-overlay {background-color: rgba(255, 255, 255, 0.8); color: #222;}
 
 .web-design ul li .project-overlay p {
     text-align: center;
