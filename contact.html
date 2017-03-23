@@ -10,10 +10,63 @@ header-img: "img/contact-bg.jpg"
 <p>Hello! Want to get in contact with me? <br>
 I'm in many places:
 <p>
-(email)  <a href="mailto:haldeman.lauren@gmail.com">haldeman(dot)lauren(at)gmail(dot)com</a><br>
+
+</section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    {% if site.twitter_username %}
+                    <li>
+                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.facebook_username %}
+                    <li>
+                        <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.github_username %}
+                    <li>
+                        <a href="https://github.com/{{ site.github_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.email_username %}
+                    <li>
+                        <a href="mailto:{{ site.email_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</p>
+            </div>
+        </div>
+    </div>
+	
+	(email)  <a href="mailto:haldeman.lauren@gmail.com">haldeman(dot)lauren(at)gmail(dot)com</a><br>
 (facebook) <a href="https://www.facebook.com/wlftn">facebook.com/wlftn</a><br>
 (twitter) <a href="https://twitter.com/laurenhaldeman">@laurenhaldeman</a><br>
 (instagram) <a href="https://www.instagram.com/laurenhaldeman/">laurenhaldeman</a><br>
 (github) <a href="https://github.com/laurenhaldeman">github.com/laurenhaldeman</a><br>
-</section>
+
 </div>
