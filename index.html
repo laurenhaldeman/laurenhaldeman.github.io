@@ -48,7 +48,7 @@ description: ""
         </p>
         <button class="btn btn-default"><a href="http://www.rescuepress.co/shop/calenday">BUY THE BOOK</a></button>
         <button class="btn btn-default"><a href="http://www.rescuepress.co/shop/calenday">LEARN MORE</a></button>
-        
+
   </div>
 </section>
 
@@ -96,7 +96,17 @@ description: ""
   </div>
 </section>
 
-<section class="textcenter bar">
+<section class="bar textcenter">
+  <h1 class="border">LIFE</h1>
+    <div class="container"><p>Right now? The smaller month inside of this month.</p></div>
+      <!-- SnapWidget -->
+      <script src="https://snapwidget.com/js/snapwidget.js"></script>
+      <iframe src="https://snapwidget.com/embed/356484" class="snapwidget-widget" allowTransparency="true"
+      frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; ">
+      </iframe>
+</section>
+
+<section class="textcenter bar no-top">
     <div class="container">
         <h1 class="lined"><span>OH, HELLO THERE</span></h1>
         <p>
@@ -110,39 +120,8 @@ description: ""
        <button class="btn btn-default"><a href="http://www.rescuepress.co/shop/calenday">LEARN MORE</a></button>
     </div>
 </section>
-<!--
-<section class="glow bar">
-  <div class="container">
-
-      <div class="textcenter">
-      <h1 class="border" style="margin: 0px auto">BLOG TIME</h1>
-      </div>
 
 
-        {% for post in site.posts limit:2 %}
-
-        <div class="post-preview">
-              <div class="post-image">
-                <img src="{{ post.image }}">
-              </div>
-              <a href="{{ post.url | prepend: site.baseurl }}">
-                <h2 class="post-title">{{ post.title }}</h2>
-              </a>
-                {% if post.subtitle %}
-                <h3 class="post-subtitle">
-                    {{ post.subtitle }}
-                </h3>
-                {% endif %}
-              <div class="post-excerpt">
-                {{ post.excerpt | strip_html | truncatewords:60 }} || <a href="{{ post.url | prepend: site.baseurl }}" class="">read more</a>
-              </div>
-              <hr>
-        </div>
-        {% endfor %}
-
-
-
-
- </div>
-</section>
--->
+</div>
+</div>
+</div>
