@@ -1,7 +1,70 @@
 <!-- Footer -->
-<div class="textcenter" style="font-size: 14px; color: #999; padding-top: 100px;">
-  <p>&copy; Copyright 2017 Lauren Haldeman</p>
+<section class="bar" style="background: #9EF3FF;">
+<!-- Begin MailChimp Signup Form -->
+<h1 class="lined"> DO YOU LIKE NEWSLETTERS?</h1>
+<div id="mc_embed_signup">
+<form action="//laurenhaldeman.us10.list-manage.com/subscribe/post?u=7977c8ba7fa7cde5ee26e2140&amp;id=b0f81e8c33" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll"><h2>Productivity Boost: The Creative Writing Tip-Sheet</h2><br>
+A bi-weekly newsletter to help you Work Smarter: <br>Power Up Your Writing Routine, Amp Up Your Output<p>
+	<label for="mce-EMAIL">Want to get tips for productivity hacks, creative writing and more? Subscribe!</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7977c8ba7fa7cde5ee26e2140_b0f81e8c33" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
 </div>
+</section>
+
+<!--End mc_embed_signup-->
+
+<div class="textcenter" style="color: #999; padding-top: 100px;">
+  <ul class="list-inline">
+      {% if site.twitter_username %}
+      <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+          </a>
+      </li>
+      {% endif %}
+      {% if site.facebook_username %}
+      <li>
+          <a href="https://www.facebook.com/{{ site.facebook_username }}">
+              <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+          </a>
+      </li>
+      {% endif %}
+      {% if site.github_username %}
+      <li>
+          <a href="https://github.com/{{ site.github_username }}">
+              <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+          </a>
+      </li>
+      {% endif %}
+      {% if site.email_username %}
+      <li>
+          <a href="mailto:{{ site.email_username }}">
+              <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+          </a>
+      </li>
+      {% endif %}
+  </ul>
+<a style="font-size: 14px;" href="mailto:haldeman.lauren@gmail.com">haldeman(dot)lauren(at)gmail(dot)com</a><br>
+  <p style="font-size: 14px;">&copy; Copyright 2017 Lauren Haldeman</p>
+</div>
+
 
 
 

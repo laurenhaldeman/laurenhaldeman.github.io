@@ -121,7 +121,7 @@ ul {
 .typer-section {text-align: center;}
 /* NAV BAR */
 
-.navbar-default {background: transparent !important;}
+.navbar-default {background: white;}
 
 .navbar-custom {
   position: absolute;
@@ -187,6 +187,7 @@ div.color-palette>div div, nav.static-nav div.color-palette>div div {
   letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
+.navbar-default {background: transparent !important;}
 
   h1.border {
     border: 7px solid #28242B;
