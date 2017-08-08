@@ -43,7 +43,7 @@ h1.lined {
 }
 
 h1.large {
-font-size: 40px;
+font-size: 38px;
 line-height: 50px;
 font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-weight: 500;
@@ -119,6 +119,10 @@ ul {
 .drawn {letter-spacing: 5px; font-family: 'Londrina Solid', sans-serif;}
 
 .typer-section {text-align: center;}
+
+#mc_embed_signup {text-align: center;}
+
+
 /* NAV BAR */
 
 .navbar-default {background: white;}
