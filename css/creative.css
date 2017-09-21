@@ -1,7 +1,7 @@
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
-  color: #fff;
+  color: #3f3844;
 
 }
 p {
@@ -104,7 +104,7 @@ ul {
 /* GLOBALS */
 .glow {background: #edfbba !important; color: #3f3844 !important;}
 .dark {background: #262626; color: white;}
-.white {background: #f7f7f7 !important;}
+.white {background: #fff !important;}
 .dark h1.border {border-color: white; color: white;}
 .dark a, .dark p {color: rgba(255,255,255,0.9); text-decoration: none;}
 .lt-grey {background: #f1f1f1;}
