@@ -103,6 +103,7 @@ ul {
 
 /* GLOBALS */
 .glow {background: #edfbba !important; color: #3f3844 !important;}
+.paper {color: #FEF9E7;}
 .dark {background: #262626; color: white;}
 .white {background: #fff !important;}
 .dark h1.border {border-color: white; color: white;}
