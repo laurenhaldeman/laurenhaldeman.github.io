@@ -43,7 +43,7 @@ h1.lined {
 }
 
 h1.large {
-font-size: 38px;
+font-size: 40px;
 line-height: 50px;
 font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-weight: 500;
@@ -62,10 +62,7 @@ a:hover,
 a:focus {
   color: #5e5e5e;;
 }
-a img:hover,
-a img:focus {
-  cursor: zoom-in;
-}
+
 blockquote {
   color: #808080;
   font-style: italic;
@@ -102,15 +99,21 @@ ul {
 }
 
 /* GLOBALS */
-.glow {background: rgb(218, 247, 166) !important; color: #3f3844 !important;}
-.paper {background: #fff5ce; !important;}
+.glow {background: #edfbba !important; color: #3f3844 !important;}
+.paper {background: #FEF9E7;}
 .dark {background: #262626; color: white;}
-.white {background: #f7f7f7 !important;}
+.white {background: #fff !important;}
 .dark h1.border {border-color: white; color: white;}
 .dark a, .dark p {color: rgba(255,255,255,0.9); text-decoration: none;}
 .lt-grey {background: #f1f1f1;}
 
 .no-top {padding-top: 0px !important;}
+.no-bottom {padding-bottom: 0px !important;}
+.top-fifty {padding-top: 50px !important;}
+.bottom-fifty {padding-bottom: 50px !important;}
+.bottom-ten {padding-bottom: 10px !important;}
+
+a img {cursor: pointer;}
 
 .textcenter {text-align: center;}
 .imgcenter {margin: 0 auto;}
@@ -120,10 +123,6 @@ ul {
 .drawn {letter-spacing: 5px; font-family: 'Londrina Solid', sans-serif;}
 
 .typer-section {text-align: center;}
-
-#mc_embed_signup {text-align: center;}
-
-
 /* NAV BAR */
 
 .navbar-default {background: white;}
