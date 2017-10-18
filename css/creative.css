@@ -60,7 +60,8 @@ a {
 }
 a:hover,
 a:focus {
-  color: #5e5e5e;;
+  border-bottom: 1px block dotted;
+  text-decoration: none;
 }
 
 blockquote {
