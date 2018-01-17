@@ -115,7 +115,7 @@ ul {
 .dark a, .dark p {color: rgba(255,255,255,0.9); text-decoration: none;}
 .lt-grey {background: #f1f1f1;}
 
-.border {border: 4px solid black;}
+.img-border {border: 4px solid black;}
 
 .no-top {padding-top: 0px !important;}
 .no-bottom {padding-bottom: 0px !important;}
