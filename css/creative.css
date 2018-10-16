@@ -114,7 +114,7 @@ ul {
 .dark h1.border {border-color: white; color: white;}
 .dark a, .dark p {color: rgba(255,255,255,0.9); text-decoration: none;}
 .lt-grey {background: #f1f1f1;}
-
+a.no-underline {border-bottom: 0px solid transparent;}
 .img-border {border: 5px solid #eee;}
 
 .no-top {padding-top: 0px !important;}
