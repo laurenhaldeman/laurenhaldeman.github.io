@@ -128,7 +128,7 @@ a img {cursor: pointer;}
 .textcenter {text-align: center;}
 .imgcenter {margin: 0 auto;}
 .circle {border-radius: 100%;}
-.light-text {color: #fff;}
+.light-text {color: #fff !important;}
 .dark-text {color: #3f3844;}
 .drawn {letter-spacing: 5px; font-family: 'Londrina Solid', sans-serif;}
 
