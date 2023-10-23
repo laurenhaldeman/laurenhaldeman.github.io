@@ -1,11 +1,52 @@
-<html>
-	<head>
-		<title>Calenday</title>
-<meta http-equiv="REFRESH" content="0;url=https://laurenhaldeman.com/books/#calenday">
-	</head>
-	<body>
-    <p>This page has moved to a new page: <a href="https://laurenhaldeman.com/books/#calenday/">
-      Calenday</a>.</p> 
-	
-	</body>
-</html>
+---
+layout: no-banner
+description: ""
+---
+
+
+<p id="calenday"></p>
+<section class="bar no-top white" id="content">
+<div class="container textcenter">
+<img class="imgcenter" src="/img/calenday-lauren-haldeman-desk-from-above.png" alt="instead-of-dying-lauren-haldeman" width="800" height="400">
+
+<h1 class="border">CALENDAY</h1>
+</div>
+
+  <div class="container textcenter">
+        <p>
+		<i>Calenday</i> is a book of poems that you can read! I wrote it with my mind and my hands.
+        It is mostly about blueprints, ghosts, parents &amp; children, but it is also about data-syncing,
+        animals showing love, the unseen world, sycamores…
+        </p>
+        <button class="btn btn-default"><a href="https://rescuepress.co/books/p/calenday">BUY THE BOOK</a></button>
+        <button class="btn btn-default"><a href="https://rescuepress.co/books/p/calenday">LEARN MORE</a></button>
+
+  </div>
+</section>
+
+
+
+
+<!-- <section class="lt-grey bar">
+  <div class="container">
+    <h1 class="lined"><span>PRAISE FOR CALENDAY</span></h3>
+    “My eye sees now in iridescent hue. Flowers glow brighter than suns, the white page glows purple, and each created thing keeps making a brighter version of itself: person to child, poetry to poem, windmill to wind: ‘Look at it; / look at it breathing.’ Dear reader, yes: look at it. This book. It’s breathing.” <strong>—Dan Beachy-Quick</strong>
+    <p>&nbsp;</p>
+    “Part elegy, part exaltation, motherhood is a kind of disoriented mourning in this grieving, chilling collection, where to be born is to slip from illimitable immortality into time. And even as Haldeman cherishes the essence of life, ‘Your body a banquet of sunshine in this shovel,’ I wonder if this measured poet slinging her spade is a master gardener or a gravedigger. <em>Calenday</em> is the logbook of both. A book of the dead, and a book of life, this is a mysterious desk calendar countdown that accounts for eternity by charting now, now, now, and now. ‘Everything was glorious and dangerous.'”<strong>—Robyn Schiff</strong>
+  </div>
+</section> 
+
+<section class="textcenter bar">
+    <div class="container">
+        <h1 class="lined"><span>HELLO THERE</span></h1>
+        <p>
+          I’m Lauren Haldeman. <p>I am the author of the poetry collections <br>INSTEAD OF DYING (winner of the 2017 Colorado Prize for Poetry), <br>CALENDAY (Rescue Press, 2014) and THE ECCENTRICITY IS ZERO (Digraph Press, 2014). <p>I work as a web developer, web designer and editor during the daytime. <p>I received my M.F.A. from the Iowa Writers’ Workshop, <br>and have been a finalist for the Walt Whitman award and National Poetry Series. <p>Also: I’m a mom and make paintings.
+                <p>
+        <h1 class="lined"><span>HERE’S WHAT I LOOK LIKE</span></h1>
+        <p>
+        <img class="imgcenter" title="author-photo-1-1" src="/img/author-photo-1-1.png">
+       </p>
+    
+    </div>
+</section> -->
+
