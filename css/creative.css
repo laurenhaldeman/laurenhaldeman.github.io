@@ -164,7 +164,7 @@ a img {cursor: pointer;}
 }
 
 .item {
-  border-top: 4mm ridge rgba(211, 220, 50, .6);
+  border-top: 4mm solid #ebffab;
   background-color: white;
   padding: 30px 50px;
   margin-top: 10px;
