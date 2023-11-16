@@ -164,7 +164,8 @@ a img {cursor: pointer;}
 }
 
 .item {
-  background-color: #f7ffd1;
+  border-top: 4px solid #f7ffd1
+  background-color: white;
   padding: 30px 50px;
   margin-top: 10px;
 }
