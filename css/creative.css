@@ -164,7 +164,7 @@ a img {cursor: pointer;}
 }
 
 .item {
-  border-top: 2mm dashed #ebffab;
+  border-top: 1mm solid #ebffab;
   background-color: white;
   padding: 30px 50px;
   margin-top: 10px;
