@@ -743,6 +743,20 @@ form .row:first-child .floating-label-form-group {
 .btn-default a:hover,
 .btn-default:hover a {color: white; text-decoration: none;}
 
+//
+
+.dark .btn-default:hover,
+.dark .btn-default:focus
+ {
+  background-color: white;
+  border: white solid 4px;
+  color: white;
+
+}
+
+.dark .btn-default a:hover,
+.dark .btn-default:hover a {color: white; text-decoration: none;}
+
 .pager {
   margin: 20px 0 0;
 }
