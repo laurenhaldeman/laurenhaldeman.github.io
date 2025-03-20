@@ -64,8 +64,8 @@ section.bar {padding: 100px 0;}
 a {
   color: black;
   cursor: pointer;
-  border-bottom: 1px block dotted;
 }
+
 a:hover {border-bottom: 1px block dotted;
   text-decoration: none; color: black;}
 a:focus {
@@ -102,7 +102,6 @@ hr.small {
 
 //
 
-.blue {background: #9efff3;}
 
 .dark .btn-default {
   color: white;
@@ -128,6 +127,8 @@ ul {
 .paper {background: #FEF9E7;}
 .dark {background: #262626; color: white;}
 .white {background: #fff !important;}
+.blue {background: #9efff3 !important;}
+
 .dark h1.border {border-color: white; color: white;}
 .dark a, .dark p {color: rgba(255,255,255,0.9); text-decoration: none;}
 .lt-grey {background: #f1f1f1;}
