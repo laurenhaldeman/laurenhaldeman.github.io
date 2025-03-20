@@ -12,6 +12,10 @@ p a {
    border-bottom: 1px black solid !important;
 }
 
+ul li a, ul a, li a {
+   border-bottom: 1px black solid !important;
+}
+
 h1,
 h2,
 h3,
