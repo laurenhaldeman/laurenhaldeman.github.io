@@ -65,10 +65,11 @@ a {
   color: black;
   cursor: pointer;
 }
-a:hover,
+a:hover {border-bottom: 1px block dotted;
+  text-decoration: none; color: black;}
 a:focus {
   border-bottom: 1px block dotted;
-  text-decoration: none;
+  text-decoration: none; color: black;
 }
 
 blockquote {
