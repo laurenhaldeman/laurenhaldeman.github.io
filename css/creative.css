@@ -12,9 +12,7 @@ p a {
    border-bottom: 1px black solid !important;
 }
 
-ul li a, ul a, li a {
-   border-bottom: 1px black solid !important;
-}
+
 
 h1,
 h2,
@@ -155,6 +153,10 @@ a img {cursor: pointer;}
 .drawn {letter-spacing: 5px; font-family: 'Londrina Solid', sans-serif;}
 
 .typer-section {text-align: center;}
+
+.lined-list ul li a, .lined-list ul a, .lined-list li a {
+   border-bottom: 1px black solid !important;
+}
 
 /*FLEX BOX*/
 .flex-container {
