@@ -131,7 +131,7 @@ ul {
 .paper {background: #FEF9E7;}
 .dark {background: #262626; color: white;}
 .white {background: #fff !important;}
-.blue {background: #ebfffc !important;}
+.blue {background: #d2fdff !important;}
 
 .dark h1.border {border-color: white; color: white;}
 .dark a, .dark p {color: rgba(255,255,255,0.9); text-decoration: none;}
