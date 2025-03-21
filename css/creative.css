@@ -154,7 +154,7 @@ a img {cursor: pointer;}
 
 .typer-section {text-align: center;}
 
-.lined-list ul li a, .lined-list ul a, .lined-list li a {
+.lined-list ul li a:hover, .lined-list ul a:hover, .lined-list li a:hover {
    border-bottom: 1px black solid !important;
 }
 
