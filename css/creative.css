@@ -126,10 +126,11 @@ ul {
 
 /* GLOBALS */
 .glow {background: #edfbba !important; color: #3f3844 !important;}
-.paper {background: #FEF9E7;}
+.paper {background: #fffefa;}
 .dark {background: #262626; color: white;}
 .white {background: #fff !important;}
-.blue {background: #d2fdff !important;}
+.blue {background: #FEF9E7 !important;}
+.teal {background: #d2fdff !important;}
 
 .dark h1.border {border-color: white; color: white;}
 .dark a, .dark p {color: rgba(255,255,255,0.9); text-decoration: none;}
