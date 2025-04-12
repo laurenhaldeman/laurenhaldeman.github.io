@@ -900,10 +900,13 @@ body {
   font-size: 1.1rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.85);
-  font-family: "Diatype Mono Variable";
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.1;
   letter-spacing: 0;
   display: block;
   font-variation-settings: 'slnt' 0, 'MONO' 1;
 }
+
+
