@@ -116,6 +116,17 @@ hr.small {
 
 .dark .btn-default:hover {border-color: white;}
 
+
+.btn-default-light {
+  color: white;
+  padding: 10px;
+  border: white solid 4px;
+  background: transparent;
+}
+
+.btn-default-light a {color: white;}
+
+.btn-default-light:hover {border-color: white;}
 ul {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
